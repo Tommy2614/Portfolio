@@ -1,0 +1,247 @@
+body {
+  background-color: #212529;
+  color: #dbbcec;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* conatiner for future 
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+*/
+
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+  font-family: "Dancing Script";
+  text-align: center;
+}
+
+div {
+  margin: 0 0 20px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.5;
+  text-align: center;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Make the about me section look more techy */
+#about-me {
+  background-color: #b4aaaa;
+  padding: 20px;
+  text-align: center;
+}
+
+#about-me img {
+  border-radius: 50%;
+  max-width: 300px;
+  height: auto;
+  margin: auto;
+}
+
+/* Projects Item */
+#projects {
+  background-color: #d0d0d0;
+  padding: 20px;
+  text-align: center; /* Center-align the text within the container */
+}
+
+#projects ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto; /* Center-align the list horizontally */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the list items horizontally */
+}
+
+#projects li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#projects li a {
+  color: #338ddb;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #338ddb;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#projects li a:hover {
+  background-color: #338ddb;
+  color: #fff;
+}
+
+/* Articles Item */
+#articles {
+  background-color: #d0d0d0;
+  padding: 20px;
+  text-align: center; /* Center-align the text within the container */
+}
+
+#articles ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto; /* Center-align the list horizontally */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the list items horizontally */
+}
+
+#articles li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+#articles li a {
+  color: #338ddb;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #338ddb;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#articles li a:hover {
+  background-color: #338ddb;
+  color: #fff;
+}
+
+/* Make the contact me section look more polished */
+#contact-me {
+  background-color: #666;
+  padding: 20px;
+}
+
+#contact-me p {
+  margin-bottom: 0;
+}
+
+nav a {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+nav a:active {
+  /* This will make the button pop up when you press it */
+  transform: scale(1.1);
+}
+
+/* Styles for the button */
+.contact-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #3a1c71;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  /* display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077b5; 
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; */
+}
+
+.contact-button:before {
+  content: "\f6dc"; 
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 24px;
+}
+
+.contact-button:hover {
+  background-color: #078287;
+}
+
+.contact-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/*
+.contact-button:hover {
+  background-color: #005580;
+}
+*/
+/* Add a background color to each div */
+#about-me {
+  background-color: #333;
+}
+
+#projects {
+  background-color: #444;
+}
+
+#articles {
+  background-color: #555;
+}
+
+#contact-me {
+  background-color: #666;
+}
+
+/* Add some padding to each div */
+#about-me, #projects, #articles, #contact-me {
+  padding: 20px;
+}

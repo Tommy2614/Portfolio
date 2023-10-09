@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <link rel="stylesheet" href="./CSS/contact.styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Details</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="home-button">Home</a></li>
+                <!-- Add other nav links here -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Name:  </strong>Tommy Martindale</li>
+                <li><strong>Email:  </strong><a href="mailto:trsmcode@outlook.com">trsmcode@outlook.com</a></li>
+                <li><strong>Phone:  </strong> <a href="07538847696">07538847696</a></li>
+            </ul>
+        </section>
+        <section id="social-media">
+            <h2>Social Media</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/tommy.martindale1" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+        <section id="contact-form">
+            <h2>Submit Form To Get In Touch!</h2>
+            <form action="mailto:trsmcode@outlook.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <label for="contactMethod">Select your preferred style of contact:</label>
+        <select id="contactMethod" name="contactMethod">
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="sms">SMS</option>
+            <option value="sms">LinkedIn</option>
+            <option value="sms">Facebook</option>
+            <option value="sms">Instagram</option>
+        </select>
+
+            <script>
+                document.getElementById("contactForm").addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent the form from submitting normally
+
+                    // Get the selected value from the dropdown
+                    var selectedContactMethod = document.getElementById("contactMethod").value;
+
+                    // You can perform further actions here, like sending the preference to a server
+
+                    // For now, let's just display an alert with the selected preference
+                    alert("Your preferred style of contact is: " + selectedContactMethod);
+                });
+            </script>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <script src="./contact.script.js"></script>
+</body>
+</html>
